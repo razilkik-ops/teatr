@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=23" />
+    <link rel="stylesheet" href="./styles.css?v=25" />
   </head>
   <body>
     <header class="site-header">
@@ -18,7 +18,7 @@
         <a class="brand" href="#top" aria-label="Театр-студия Конtекsт">
           <img
             class="brand-logo"
-            src="./assets/logo-kontekst.png"
+            src="./assets/logo-kontekst-black.svg"
             alt="Театр-студия Конtекsт"
           />
         </a>
@@ -493,151 +493,154 @@
         </div>
       </section>
 
-      <section class="gallery-section" id="reviews">
+      <section class="final-suite" id="reviews">
         <div class="section-shell">
-          <div class="section-head">
-            <p class="section-label">Атмосфера</p>
-            <h2 class="section-title">Отзывы и фото / видео галерея</h2>
-          </div>
+          <div class="final-suite-shell">
+            <div class="final-top-grid">
+              <section class="final-atmosphere-panel" aria-labelledby="final-atmosphere-title">
+                <div class="section-head section-head-compact final-suite-head">
+                  <p class="section-label">Атмосфера</p>
+                  <h2 class="section-title" id="final-atmosphere-title">
+                    Отзывы и моменты со сцены
+                  </h2>
+                </div>
 
-          <div class="gallery-layout">
-            <div class="gallery-grid">
-              <img
-                src="./assets/hero-collage-v1.png"
-                alt="Коллаж с театральной атмосферой"
-              />
-              <img
-                src="./assets/course-cards/acting-course.png"
-                alt="Участник актерского курса"
-              />
-              <img
-                src="./assets/course-cards/speech-course.png"
-                alt="Сценический микрофон"
-              />
+                <div class="final-atmosphere-grid">
+                  <div class="final-media-strip" aria-label="Фото и видео атмосферы студии">
+                    <img
+                      src="./assets/course-cards/speech-course.png"
+                      alt="Сценический микрофон в драматичном свете"
+                    />
+                    <img
+                      src="./assets/course-cards/acting-course.png"
+                      alt="Участник актерского курса на черно-белом портрете"
+                    />
+                    <img
+                      src="./assets/editorial/performances-stage-v1.png"
+                      alt="Свет на сцене перед выступлением"
+                    />
+                  </div>
+
+                  <div class="final-reviews-list">
+                    <article class="final-review-card">
+                      <p class="review-label">Отзыв родителя</p>
+                      <p>
+                        «После курса дочь стала свободнее общаться и с
+                        удовольствием выходит на сцену. Для нас это была
+                        большая внутренняя победа».
+                      </p>
+                      <strong>Марина, мама ученицы 8 лет</strong>
+                    </article>
+
+                    <article class="final-review-card">
+                      <p class="review-label">Отзыв участника</p>
+                      <p>
+                        «Пришел за речью для работы, а получил больше:
+                        спокойствие, уверенность и понимание, как держать
+                        внимание аудитории».
+                      </p>
+                      <strong>Игорь, участник ораторского интенсива</strong>
+                    </article>
+                  </div>
+                </div>
+              </section>
+
+              <aside class="final-faq-panel" id="faq" aria-labelledby="final-faq-title">
+                <p class="section-label">Вопросы</p>
+                <h2 class="section-title" id="final-faq-title">
+                  Часто задаваемые вопросы
+                </h2>
+                <div class="faq-list final-faq-list">
+                  <details class="faq-item" open>
+                    <summary>Нужен ли опыт, чтобы начать?</summary>
+                    <p>
+                      Нет, программы рассчитаны и на новичков. Важнее интерес,
+                      регулярность и готовность пробовать.
+                    </p>
+                  </details>
+                  <details class="faq-item">
+                    <summary>Можно ли прийти на пробное занятие?</summary>
+                    <p>
+                      Да, пробное занятие можно вынести в отдельный сценарий
+                      записи через кнопку заявки.
+                    </p>
+                  </details>
+                  <details class="faq-item">
+                    <summary>Как проходят отчетные показы?</summary>
+                    <p>
+                      В течение сезона группы готовят открытые показы, эскизы и
+                      финальные выступления в зависимости от возраста и
+                      программы.
+                    </p>
+                  </details>
+                  <details class="faq-item">
+                    <summary>Подходит ли ораторский курс для бизнеса?</summary>
+                    <p>
+                      Да, он особенно полезен для экспертов, руководителей,
+                      предпринимателей и всех, кто часто выступает перед
+                      людьми.
+                    </p>
+                  </details>
+                </div>
+              </aside>
             </div>
 
-            <div class="reviews-list">
-              <article class="review-card">
-                <p class="review-label">Отзыв родителя</p>
-                <p>
-                  «После курса дочь стала свободнее общаться и с удовольствием
-                  выходит на сцену. Для нас это была большая внутренняя победа».
+            <div class="final-cta-grid" id="signup">
+              <div class="final-cta-copy">
+                <p class="section-label">Старт</p>
+                <h2 class="section-title">Оставьте заявку на обучение</h2>
+                <p class="final-cta-note">
+                  Подберем формат, расскажем про группу и поможем выбрать
+                  лучший старт для ребенка или взрослого.
                 </p>
-                <strong>Марина, мама ученицы 8 лет</strong>
-              </article>
+                <ul class="final-cta-list">
+                  <li>Ответим на вопросы по расписанию и возрасту</li>
+                  <li>Подскажем, с чего начать без опыта</li>
+                  <li>Свяжем форму с Telegram, CRM или callback</li>
+                </ul>
+              </div>
 
-              <article class="review-card">
-                <p class="review-label">Отзыв участника</p>
-                <p>
-                  «Пришел за речью для работы, а получил больше: спокойствие,
-                  уверенность и понимание, как держать внимание аудитории».
-                </p>
-                <strong>Игорь, участник ораторского интенсива</strong>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="faq-section" id="faq">
-        <div class="section-shell">
-          <div class="faq-editorial">
-            <aside class="faq-editorial-aside">
-              <p class="section-label">Вопросы</p>
-              <h2 class="section-title">Часто задаваемые вопросы / FAQ</h2>
-              <p class="faq-editorial-note">
-                Коротко собрали то, о чем чаще всего спрашивают до старта.
-              </p>
-              <figure class="faq-editorial-media">
+              <figure class="final-cta-media">
                 <img
-                  src="./assets/editorial/faq-script-v1.png"
-                  alt="Сценарий, блокнот и очки на столе"
+                  src="./assets/editorial/signup-portrait-v2.png"
+                  alt="Педагог театральной студии с планшетом"
                 />
               </figure>
-            </aside>
 
-            <div class="faq-main">
-              <div class="faq-list">
-                <details class="faq-item" open>
-                  <summary>Нужен ли опыт, чтобы начать?</summary>
-                  <p>
-                    Нет, программы рассчитаны и на новичков. Важнее интерес,
-                    регулярность и готовность пробовать.
-                  </p>
-                </details>
-                <details class="faq-item">
-                  <summary>Можно ли прийти на пробное занятие?</summary>
-                  <p>
-                    Да, пробное занятие можно вынести в отдельный сценарий
-                    записи через кнопку заявки.
-                  </p>
-                </details>
-                <details class="faq-item">
-                  <summary>Как проходят отчетные показы?</summary>
-                  <p>
-                    В течение сезона группы готовят открытые показы, эскизы и
-                    финальные выступления в зависимости от возраста и
-                    программы.
-                  </p>
-                </details>
-                <details class="faq-item">
-                  <summary>Подходит ли ораторский курс для бизнеса?</summary>
-                  <p>
-                    Да, он особенно полезен для экспертов, руководителей,
-                    предпринимателей и всех, кто часто выступает перед людьми.
-                  </p>
-                </details>
-              </div>
+              <form class="signup-form final-cta-form">
+                <label>
+                  Имя
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Как к вам обращаться"
+                  />
+                </label>
+                <label>
+                  Телефон
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="+375 (29) 000-00-00"
+                  />
+                </label>
+                <label>
+                  Направление
+                  <select name="course">
+                    <option>Театральные курсы</option>
+                    <option>Ораторское искусство</option>
+                    <option>Пробное занятие</option>
+                  </select>
+                </label>
+                <button class="cta-button signup-submit final-cta-submit" type="submit">
+                  Записаться на консультацию
+                </button>
+                <p class="final-cta-disclaimer">
+                  Нажимая кнопку, вы соглашаетесь на обработку персональных
+                  данных.
+                </p>
+              </form>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="signup-section" id="signup">
-        <div class="section-shell">
-          <div class="signup-editorial">
-            <div class="signup-editorial-copy">
-              <p class="section-label">Старт</p>
-              <h2 class="section-title">Оставьте заявку на обучение</h2>
-              <p class="signup-editorial-note">
-                Подберем формат, расскажем про группу и поможем выбрать лучший
-                старт для ребенка или взрослого.
-              </p>
-              <ul class="signup-editorial-list">
-                <li>Ответим на вопросы по расписанию и возрасту</li>
-                <li>Подскажем, с чего начать без опыта</li>
-                <li>Свяжем форму с Telegram, CRM или callback</li>
-              </ul>
-            </div>
-
-            <figure class="signup-editorial-media">
-              <img
-                src="./assets/editorial/signup-portrait-v1.png"
-                alt="Педагог театральной студии с блокнотом"
-              />
-            </figure>
-
-            <form class="signup-form signup-form-editorial">
-              <label>
-                Имя
-                <input type="text" name="name" placeholder="Как к вам обращаться" />
-              </label>
-              <label>
-                Телефон
-                <input type="tel" name="phone" placeholder="+375 (29) 000-00-00" />
-              </label>
-              <label>
-                Направление
-                <select name="course">
-                  <option>Театральные курсы</option>
-                  <option>Ораторское искусство</option>
-                  <option>Пробное занятие</option>
-                </select>
-              </label>
-              <button class="cta-button signup-submit" type="submit">
-                Записаться
-              </button>
-            </form>
           </div>
         </div>
       </section>
@@ -645,36 +648,63 @@
 
     <footer class="site-footer" id="contacts">
       <div class="footer-shell">
-        <div class="footer-grid">
-          <div class="footer-block">
-            <p class="section-label">Контакты</p>
-            <h2 class="footer-title">Театр-студия Конtекsт</h2>
-            <p class="footer-text">
-              Адрес, email, карта, ссылки на соцсети, договор оферты и
-              свидетельство о регистрации.
-            </p>
-          </div>
-
-          <div class="footer-block">
-            <h3 class="footer-label">Контакты</h3>
-            <p class="footer-text">[укажите адрес студии]</p>
-            <p class="footer-text">
-              <a href="mailto:[укажите-email]">[укажите-email]</a>
-            </p>
-            <p class="footer-text">
-              <a href="#">Instagram</a> / <a href="#">YouTube</a> /
-              <a href="#">Telegram</a>
-            </p>
-          </div>
-
-          <div class="footer-block">
-            <h3 class="footer-label">Документы</h3>
-            <p class="footer-text"><a href="#">Договор оферты</a></p>
-            <p class="footer-text"><a href="#">Свидетельство о регистрации</a></p>
-            <div class="map-placeholder">
-              Вставьте сюда iframe Яндекс.Карты или Google Maps
+        <div class="footer-ribbon">
+          <section class="footer-cell footer-brand-cell" aria-label="О студии">
+            <div class="footer-wordmark">
+              <span>Театр</span>
+              <span>студия</span>
             </div>
-          </div>
+            <p class="footer-brand-text">
+              Пространство для тех, кто хочет говорить, действовать и
+              вдохновлять.
+            </p>
+          </section>
+
+          <section class="footer-cell" aria-labelledby="footer-contacts-title">
+            <h3 class="footer-label" id="footer-contacts-title">Контакты</h3>
+            <div class="footer-contact-list">
+              <p>+375 (29) 000-00-00</p>
+              <p>
+                <a href="mailto:[укажите-email]">[укажите-email]</a>
+              </p>
+              <p>г. Минск, [укажите точный адрес студии]</p>
+              <p>Пн-Пт 11:00-20:00, Сб 11:00-16:00</p>
+            </div>
+          </section>
+
+          <section class="footer-cell footer-map-cell" aria-labelledby="footer-map-title">
+            <h3 class="footer-label" id="footer-map-title">Как нас найти</h3>
+            <div class="footer-map-preview" aria-hidden="true">
+              <span class="footer-map-pin"></span>
+            </div>
+          </section>
+
+          <section class="footer-cell" aria-labelledby="footer-docs-title">
+            <h3 class="footer-label" id="footer-docs-title">Документы</h3>
+            <div class="footer-doc-list">
+              <a href="#" aria-label="Договор оферты">Договор оферты</a>
+              <a href="#" aria-label="Свидетельство о регистрации">
+                Свидетельство о регистрации
+              </a>
+              <a href="#" aria-label="Политика конфиденциальности">
+                Политика конфиденциальности
+              </a>
+            </div>
+          </section>
+
+          <section class="footer-cell footer-social-cell" aria-labelledby="footer-socials-title">
+            <h3 class="footer-label" id="footer-socials-title">Мы в соцсетях</h3>
+            <div class="footer-social-links">
+              <a href="#" aria-label="Telegram студии">Telegram</a>
+              <a href="#" aria-label="Instagram студии">Instagram</a>
+              <a href="#" aria-label="YouTube студии">YouTube</a>
+              <a href="#" aria-label="VK студии">VK</a>
+            </div>
+            <p class="footer-copy">
+              Когда появятся публичные ссылки, их можно будет подставить сюда
+              без переделки макета.
+            </p>
+          </section>
         </div>
       </div>
     </footer>
