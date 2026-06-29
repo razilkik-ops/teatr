@@ -1996,18 +1996,55 @@ select {
 }
 
 .final-reviews-list {
-  display: grid;
-  gap: 14px;
+  position: relative;
+  overflow: hidden;
+  min-height: var(--review-slider-height, 340px);
 }
 
 .final-review-card {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   padding-bottom: 16px;
   border-bottom: 1px solid #ebebeb;
+  background: #fff;
+  opacity: 0;
+  transform: translateY(calc(100% + 18px));
+  transition:
+    transform 1400ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 1400ms ease;
 }
 
 .final-review-card:last-child {
   padding-bottom: 0;
   border-bottom: 0;
+}
+
+.final-review-card.is-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.final-review-card.is-next,
+.final-review-card.is-hidden {
+  opacity: 0;
+  transform: translateY(calc(100% + 18px));
+}
+
+.final-review-card.is-exit {
+  opacity: 0;
+  transform: translateY(calc(-100% - 18px));
+}
+
+.final-review-card-measure {
+  position: relative;
+  inset: auto;
+  opacity: 1;
+  transform: none;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .final-review-card p {

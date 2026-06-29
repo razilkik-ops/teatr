@@ -521,7 +521,7 @@
                     />
                   </div>
 
-                  <div class="final-reviews-list">
+                  <div class="final-reviews-list" data-review-slider>
                     <article class="final-review-card">
                       <p class="review-label">Отзыв родителя</p>
                       <p>
@@ -731,6 +731,105 @@
               panel.hidden = !isActive;
             });
           });
+        });
+
+        const reviewSliders = Array.from(
+          document.querySelectorAll("[data-review-slider]"),
+        );
+
+        reviewSliders.forEach((slider) => {
+          const cards = Array.from(
+            slider.querySelectorAll(".final-review-card"),
+          );
+
+          if (cards.length < 2) return;
+
+          let activeIndex = 0;
+          let isAnimating = false;
+          let autoplayId = null;
+
+          const setSliderHeight = () => {
+            const heights = cards.map((card) => {
+              const clone = card.cloneNode(true);
+              clone.className = "final-review-card final-review-card-measure";
+              slider.appendChild(clone);
+              const height = clone.offsetHeight;
+              clone.remove();
+              return height;
+            });
+
+            const maxHeight = Math.max(...heights);
+            slider.style.setProperty(
+              "--review-slider-height",
+              `${maxHeight}px`,
+            );
+          };
+
+          const paintStates = (currentIndex, exitingIndex = -1) => {
+            const nextIndex = (currentIndex + 1) % cards.length;
+
+            cards.forEach((card, index) => {
+              card.classList.remove(
+                "is-active",
+                "is-next",
+                "is-exit",
+                "is-hidden",
+              );
+
+              if (index === currentIndex) {
+                card.classList.add("is-active");
+                return;
+              }
+
+              if (index === exitingIndex) {
+                card.classList.add("is-exit");
+                return;
+              }
+
+              if (index === nextIndex) {
+                card.classList.add("is-next");
+                return;
+              }
+
+              card.classList.add("is-hidden");
+            });
+          };
+
+          const goNext = () => {
+            if (isAnimating) return;
+
+            isAnimating = true;
+
+            const currentIndex = activeIndex;
+            const nextIndex = (activeIndex + 1) % cards.length;
+
+            paintStates(nextIndex, currentIndex);
+
+            window.setTimeout(() => {
+              activeIndex = nextIndex;
+              paintStates(activeIndex);
+              isAnimating = false;
+            }, 1400);
+          };
+
+          const startAutoplay = () => {
+            if (autoplayId !== null) return;
+            autoplayId = window.setInterval(goNext, 5200);
+          };
+
+          const stopAutoplay = () => {
+            if (autoplayId === null) return;
+            window.clearInterval(autoplayId);
+            autoplayId = null;
+          };
+
+          setSliderHeight();
+          paintStates(activeIndex);
+          startAutoplay();
+
+          slider.addEventListener("mouseenter", stopAutoplay);
+          slider.addEventListener("mouseleave", startAutoplay);
+          window.addEventListener("resize", setSliderHeight);
         });
       })();
     </script>
