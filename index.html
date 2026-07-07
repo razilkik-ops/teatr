@@ -10,260 +10,123 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=25" />
+    <link rel="stylesheet" href="./styles.css?v=26" />
   </head>
   <body>
     <header class="site-header">
       <div class="header-shell">
-        <a class="brand" href="#top" aria-label="Театр-студия Конtекsт">
-          <img
-            class="brand-logo"
-            src="./assets/logo-kontekst-black.svg"
-            alt="Театр-студия Конtекsт"
-          />
-        </a>
+        <div class="header-top-row">
+          <a class="brand" href="#top" aria-label="Театр-студия Конtекsт">
+            <img
+              class="brand-logo"
+              src="./assets/logo-kontekst-black.svg"
+              alt="Театр-студия Конtекsт"
+            />
+          </a>
 
-        <nav class="main-nav" aria-label="Основная навигация">
-          <a href="#about">О нас</a>
-          <a href="#programs">Программы</a>
-          <a href="#schedule">Расписание и цены</a>
-          <a href="#teachers">Преподаватели</a>
-          <a href="#reviews">Отзывы</a>
-          <a href="#contacts">Контакты</a>
-        </nav>
+          <div class="header-utility-row" aria-label="Контактная информация">
+            <a
+              class="header-utility-link header-utility-link-map"
+              href="https://yandex.by/maps/?text=%D0%93%D0%BE%D0%BC%D0%B5%D0%BB%D1%8C%2C%20%D1%83%D0%BB.%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%2010%D0%90%2C%20%D0%BF%D0%BE%D0%BC.%20906"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span class="header-utility-label">Карты</span>
+              <span>📍 Гомель, ул. Интернациональная 10А, 9 этаж, пом. 906</span>
+            </a>
+            <div class="header-utility-link header-utility-link-muted">
+              <span class="header-utility-label">Email</span>
+              <span>уточняется</span>
+            </div>
+            <a class="header-utility-link" href="tel:+375291492803">
+              <span class="header-utility-label">Телефон</span>
+              <span>+375 (29) 149-28-03</span>
+            </a>
+            <a class="cta-button header-cta-button" href="#signup">Записаться</a>
+          </div>
+        </div>
 
-        <a class="cta-button" href="#signup">Записаться</a>
+        <div class="header-nav-row">
+          <nav class="main-nav" aria-label="Основная навигация">
+            <a href="#about">О нас</a>
+            <a href="#schedule">Расписание</a>
+            <a href="#adults-courses">Курсы для взрослых</a>
+            <a href="#kids-courses">Курсы для детей</a>
+            <a href="#speech">Курс ораторского мастерства</a>
+            <a href="#reviews">Отзывы</a>
+            <a
+              class="main-nav-social"
+              href="https://vk.com/club154474185"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="VK"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M4.9 7.8c.1 5.6 2.9 8.9 7.8 8.9h.3v-3.1c1.8.2 3.1 1.5 3.7 3.1h2.6c-.8-2.9-2.8-4.5-4.1-5.1 1.3-.8 3-2.7 3.4-3.8h-2.4c-.5 1.1-2 2.9-3.2 3v-3h-2.4v5.3c-1.2-.3-2.8-2.1-2.9-5.3z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+            <a
+              class="main-nav-social"
+              href="https://www.instagram.com/kontekst_teatr_kursy_gomel/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M7.2 3h9.6A4.2 4.2 0 0 1 21 7.2v9.6a4.2 4.2 0 0 1-4.2 4.2H7.2A4.2 4.2 0 0 1 3 16.8V7.2A4.2 4.2 0 0 1 7.2 3m0 1.8A2.4 2.4 0 0 0 4.8 7.2v9.6a2.4 2.4 0 0 0 2.4 2.4h9.6a2.4 2.4 0 0 0 2.4-2.4V7.2a2.4 2.4 0 0 0-2.4-2.4zm10.1 1.3a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2M12 7.4A4.6 4.6 0 1 1 7.4 12 4.6 4.6 0 0 1 12 7.4m0 1.8A2.8 2.8 0 1 0 14.8 12 2.8 2.8 0 0 0 12 9.2"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+            <a href="#contacts">Контакты</a>
+          </nav>
+        </div>
       </div>
     </header>
 
     <main id="top">
-      <section class="hero" id="programs">
+      <section class="hero">
         <div class="hero-shell">
-          <div class="hero-copy">
-            <p class="hero-kicker">ТЕАТР-СТУДИЯ KONTEKST</p>
-            <h1 class="hero-title">
-              <span>Курсы</span>
-              <span>актерского</span>
-              <span>и ораторского</span>
-              <span>мастерства</span>
-            </h1>
-            <p class="hero-description">
-              Для жизни, бизнеса и сцены. Практика, речь, движение, выступления
-              и настоящая внутренняя трансформация для детей и взрослых.
+          <div class="hero-intro">
+            <p class="hero-school-line">
+              ШКОЛА АКТЕРСКОГО И ОРАТОРСКОГО МАСТЕРСТВА
             </p>
-
-            <div class="hero-actions">
-              <a class="hero-button hero-button-primary" href="#signup"
-                >Записаться</a
-              >
-              <a class="hero-button hero-button-secondary" href="#schedule"
-                >Расписание и цены</a
-              >
-            </div>
-
-            <div class="hero-tags" aria-label="Направления">
-              <span>Сцена</span>
-              <span>Речь</span>
-              <span>Пластика</span>
-            </div>
+            <h1 class="hero-title">
+              Пространство для личностной трансформации и внутренней свободы
+            </h1>
           </div>
 
-          <div class="hero-art">
-            <img
-              src="./assets/hero-collage-imagegen-v3.png"
-              alt="Театральный коллаж с актерскими образами"
-            />
-          </div>
-        </div>
-      </section>
+          <div class="hero-stage">
+            <article class="hero-news-card" aria-labelledby="hero-news-title">
+              <p class="hero-kicker">Ближайший набор</p>
+              <h2 id="hero-news-title">Открыта запись на новый сезон</h2>
+              <p class="hero-description">
+                Формируем группы для малышей, детей, подростков и взрослых.
+                Есть отдельные индивидуальные занятия по актерскому и
+                ораторскому мастерству.
+              </p>
 
-      <section class="schedule-section" id="schedule">
-        <div class="section-shell">
-          <div class="program-board">
-            <h2 class="program-board-title">
-              ПРОГРАММЫ ОБУЧЕНИЯ / РАСПИСАНИЕ / ЦЕНЫ
-            </h2>
-
-            <div class="program-tabs" aria-label="Переключатель направлений">
-              <button
-                class="program-tab program-tab-active"
-                type="button"
-                data-tab-target="theatre-panel"
-                aria-selected="true"
-                aria-controls="theatre-panel"
-              >
-                Театральные курсы
-              </button>
-              <button
-                class="program-tab"
-                type="button"
-                data-tab-target="oratory-panel"
-                aria-selected="false"
-                aria-controls="oratory-panel"
-              >
-                Ораторское мастерство (Взрослые)
-              </button>
-            </div>
-
-            <div class="program-panels">
-              <div
-                class="program-panel program-panel-active"
-                id="theatre-panel"
-                data-tab-panel
-              >
-                <div class="program-cards">
-                  <article class="program-card program-card-age">
-                    <div class="program-card-head">
-                      <img
-                        class="program-card-visual"
-                        src="./assets/program-card-images/age-4-5.png"
-                        alt="Девочка дошкольного возраста на театральной сцене"
-                      />
-                      <h3>4–5 ЛЕТ</h3>
-                    </div>
-                    <p class="program-card-line">Суббота</p>
-                    <p class="program-card-line">10:00 – 11:00</p>
-                    <p class="program-card-text">
-                      Развитие через игру и творчество
-                    </p>
-                    <p class="program-card-price">190 BYN <span>/ месяц</span></p>
-                    <a class="program-card-button" href="#signup">Подробнее</a>
-                  </article>
-
-                  <article class="program-card program-card-age">
-                    <div class="program-card-head">
-                      <img
-                        class="program-card-visual"
-                        src="./assets/program-card-images/age-6-9.png"
-                        alt="Дети младшего школьного возраста на актерском занятии"
-                      />
-                      <h3>6–9 ЛЕТ</h3>
-                    </div>
-                    <p class="program-card-line">Вторник, Четверг</p>
-                    <p class="program-card-line">17:00 – 18:30</p>
-                    <p class="program-card-text">
-                      Актерское мастерство, сценическая речь, пластика
-                    </p>
-                    <p class="program-card-price">220 BYN <span>/ месяц</span></p>
-                    <a class="program-card-button" href="#signup">Подробнее</a>
-                  </article>
-
-                  <article class="program-card program-card-age">
-                    <div class="program-card-head">
-                      <img
-                        class="program-card-visual"
-                        src="./assets/program-card-images/age-10-17.png"
-                        alt="Подросток в выразительной сценической позе"
-                      />
-                      <h3>10–17 ЛЕТ</h3>
-                    </div>
-                    <p class="program-card-line">Понедельник, Среда, Пятница</p>
-                    <p class="program-card-line">18:00 – 20:00</p>
-                    <p class="program-card-text">
-                      Актерское мастерство, сценическая речь, импровизация
-                    </p>
-                    <p class="program-card-price">260 BYN <span>/ месяц</span></p>
-                    <a class="program-card-button" href="#signup">Подробнее</a>
-                  </article>
-
-                  <article class="program-card program-card-age">
-                    <div class="program-card-head">
-                      <img
-                        class="program-card-visual"
-                        src="./assets/program-card-images/age-adults.png"
-                        alt="Взрослая группа на театральном разборе"
-                      />
-                      <h3>ВЗРОСЛЫЕ</h3>
-                    </div>
-                    <p class="program-card-line">Вторник, Четверг</p>
-                    <p class="program-card-line">19:00 – 21:00</p>
-                    <p class="program-card-text">
-                      Актерское мастерство, сценическая речь, работа с образами
-                    </p>
-                    <p class="program-card-price">320 BYN <span>/ месяц</span></p>
-                    <a class="program-card-button" href="#signup">Подробнее</a>
-                  </article>
-                </div>
+              <div class="hero-news-points">
+                <p>Старт новых групп в удобное вечернее и выходное время.</p>
+                <p>Пробное знакомство, сценическая речь, пластика и практика.</p>
+                <p>Форматы для сцены, жизни, бизнеса и внутренней свободы.</p>
               </div>
+            </article>
 
-              <div class="program-panel" id="oratory-panel" data-tab-panel hidden>
-                <div class="intensive-banner">
-                  <div class="intensive-banner-media">
-                    <img
-                      src="./assets/oratory-intensive-portrait-v1.png"
-                      alt="Черно-белый портрет для блока ораторского интенсива"
-                    />
-                  </div>
+            <figure class="hero-art">
+              <img
+                src="./assets/hero-collage-imagegen-v3.png"
+                alt="Театральный коллаж с актерскими образами"
+              />
+            </figure>
 
-                  <div class="intensive-banner-copy">
-                    <h3>Ораторское мастерство (Взрослые)</h3>
-                    <p class="intensive-banner-subtitle">2-месячный интенсив</p>
-                    <div class="intensive-banner-meta">
-                      <p><strong>Старт:</strong> 10 июня 2024</p>
-                      <p><strong>Длительность:</strong> 2 месяца</p>
-                      <p><strong>Занятия:</strong> 2 раза в неделю по 2 часа</p>
-                      <p><strong>Формат:</strong> группа до 12 человек</p>
-                    </div>
-                  </div>
-
-                  <div class="intensive-banner-cta">
-                    <div class="intensive-banner-price">480 BYN</div>
-                    <a class="intensive-banner-button" href="#signup">
-                      Записаться на интенсив
-                    </a>
-                    <p class="intensive-banner-seats">Осталось 3 места</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-panel">
-              <h3 class="timeline-panel-title">
-                ПРОГРАММА ВЫСТУПЛЕНИЙ И ОТЧЕТНЫХ ПОКАЗОВ
-              </h3>
-              <div class="timeline-track">
-                <article class="timeline-item">
-                  <img
-                    class="timeline-icon-image"
-                    src="./assets/timeline-icons/winter-premiere.png"
-                    alt=""
-                  />
-                  <p class="timeline-date">Декабрь 2024</p>
-                  <h4>Зимняя премьера</h4>
-                  <p>Детские группы 4–9 лет</p>
-                </article>
-                <article class="timeline-item">
-                  <img
-                    class="timeline-icon-image"
-                    src="./assets/timeline-icons/spring-premiere.png"
-                    alt=""
-                  />
-                  <p class="timeline-date">Март 2025</p>
-                  <h4>Весенняя премьера</h4>
-                  <p>Детские группы 10–17 лет</p>
-                </article>
-                <article class="timeline-item">
-                  <img
-                    class="timeline-icon-image"
-                    src="./assets/timeline-icons/summer-premiere.png"
-                    alt=""
-                  />
-                  <p class="timeline-date">Июнь 2025</p>
-                  <h4>Летняя премьера</h4>
-                  <p>Все возрастные группы</p>
-                </article>
-                <article class="timeline-item">
-                  <img
-                    class="timeline-icon-image"
-                    src="./assets/timeline-icons/open-showcase.png"
-                    alt=""
-                  />
-                  <p class="timeline-date">Сентябрь 2025</p>
-                  <h4>Открытый показ</h4>
-                  <p>Взрослые группы</p>
-                </article>
-              </div>
-            </div>
+            <a class="hero-reserve-button" href="#signup">
+              Забронировать место на курсе
+            </a>
           </div>
         </div>
       </section>
@@ -277,12 +140,12 @@
                 <h2 class="section-title">О нас / Наша философия</h2>
               </div>
               <p class="storyboard-lead">
-                Наши курсы — не просто досуг, а настоящая трансформация
-                личности и терапия искусством для любого возраста.
+                Мы создаем живое пространство, где человек раскрывает голос,
+                тело, внимание и становится свободнее в проявлении себя.
               </p>
               <p class="storyboard-text">
-                Мы соединяем сцену, голос, пластику и внимание, чтобы человек
-                становился свободнее в общении, работе и самовыражении.
+                Наша философия строится на уважении к личности, бережной
+                практике и настоящем сценическом опыте для детей и взрослых.
               </p>
               <div class="storyboard-tags" aria-label="Ценности студии">
                 <span>Сцена</span>
@@ -321,6 +184,229 @@
         </div>
       </section>
 
+      <section class="info-section learn-section" id="learn">
+        <div class="section-shell">
+          <div class="skills-board">
+            <div class="section-head section-head-compact">
+              <p class="section-label">Результат</p>
+              <h2 class="section-title">У нас вы научитесь</h2>
+            </div>
+
+            <div class="skills-grid">
+              <article class="skill-card">
+                <h3>Говорить ясно</h3>
+                <p>
+                  Развивать сценическую речь, дикцию, дыхание и уверенную
+                  подачу без зажимов.
+                </p>
+              </article>
+              <article class="skill-card">
+                <h3>Быть свободнее</h3>
+                <p>
+                  Чувствовать себя спокойно в общении, выступлениях и новых
+                  ситуациях.
+                </p>
+              </article>
+              <article class="skill-card">
+                <h3>Работать с телом</h3>
+                <p>
+                  Осваивать пластику, внимание, выразительность и присутствие
+                  на сцене и в жизни.
+                </p>
+              </article>
+              <article class="skill-card">
+                <h3>Держать аудиторию</h3>
+                <p>
+                  Уверенно выступать, импровизировать и доносить свою мысль до
+                  зрителя или собеседника.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="schedule-section" id="schedule">
+        <div class="section-shell">
+          <div class="program-board" id="programs">
+            <h2 class="program-board-title">Программы</h2>
+            <p class="program-board-note">
+              Групповые и индивидуальные форматы для детей, подростков и
+              взрослых.
+            </p>
+
+            <div class="program-tabs" aria-label="Переключатель направлений">
+              <button
+                class="program-tab program-tab-active"
+                type="button"
+                data-tab-target="theatre-panel"
+                aria-selected="true"
+                aria-controls="theatre-panel"
+              >
+                Актерское мастерство
+              </button>
+              <button
+                class="program-tab"
+                type="button"
+                data-tab-target="oratory-panel"
+                aria-selected="false"
+                aria-controls="oratory-panel"
+              >
+                Ораторское мастерство
+              </button>
+            </div>
+
+            <div class="program-panels">
+              <div
+                class="program-panel program-panel-active"
+                id="theatre-panel"
+                data-tab-panel
+              >
+                <div class="program-cards" id="kids-courses">
+                  <article class="program-card program-card-age">
+                    <div class="program-card-head">
+                      <img
+                        class="program-card-visual"
+                        src="./assets/program-card-images/age-4-5.png"
+                        alt="Девочка дошкольного возраста на театральной сцене"
+                      />
+                      <p class="program-card-segment">Малыши</p>
+                      <h3>4–5 лет</h3>
+                    </div>
+                    <p class="program-card-line">Суббота</p>
+                    <p class="program-card-line">10:00 – 11:00</p>
+                    <p class="program-card-text">
+                      Игра, воображение, мягкое знакомство со сценой и
+                      творческой свободой.
+                    </p>
+                    <p class="program-card-price">190 BYN <span>/ месяц</span></p>
+                    <a class="program-card-button" href="#signup">Подробнее</a>
+                  </article>
+
+                  <article class="program-card program-card-age">
+                    <div class="program-card-head">
+                      <img
+                        class="program-card-visual"
+                        src="./assets/program-card-images/age-6-9.png"
+                        alt="Дети младшего школьного возраста на актерском занятии"
+                      />
+                      <p class="program-card-segment">Дети</p>
+                      <h3>6–9 лет</h3>
+                    </div>
+                    <p class="program-card-line">Вторник, Четверг</p>
+                    <p class="program-card-line">17:00 – 18:30</p>
+                    <p class="program-card-text">
+                      Актерское мастерство, сценическая речь, внимание и
+                      пластика.
+                    </p>
+                    <p class="program-card-price">220 BYN <span>/ месяц</span></p>
+                    <a class="program-card-button" href="#signup">Подробнее</a>
+                  </article>
+
+                  <article class="program-card program-card-age">
+                    <div class="program-card-head">
+                      <img
+                        class="program-card-visual"
+                        src="./assets/program-card-images/age-10-17.png"
+                        alt="Подросток в выразительной сценической позе"
+                      />
+                      <p class="program-card-segment">Подростки</p>
+                      <h3>10–17 лет</h3>
+                    </div>
+                    <p class="program-card-line">Понедельник, Среда, Пятница</p>
+                    <p class="program-card-line">18:00 – 20:00</p>
+                    <p class="program-card-text">
+                      Импровизация, партнерство, речь, сценическое мышление и
+                      уверенность.
+                    </p>
+                    <p class="program-card-price">260 BYN <span>/ месяц</span></p>
+                    <a class="program-card-button" href="#signup">Подробнее</a>
+                  </article>
+
+                  <article class="program-card program-card-age" id="adults-courses">
+                    <div class="program-card-head">
+                      <img
+                        class="program-card-visual"
+                        src="./assets/program-card-images/age-adults.png"
+                        alt="Взрослая группа на театральном разборе"
+                      />
+                      <p class="program-card-segment">Взрослые</p>
+                      <h3>Вечерняя группа</h3>
+                    </div>
+                    <p class="program-card-line">Вторник, Четверг</p>
+                    <p class="program-card-line">19:00 – 21:00</p>
+                    <p class="program-card-text">
+                      Актерское мастерство, раскрепощение, сценическая речь и
+                      работа с образом.
+                    </p>
+                    <p class="program-card-price">320 BYN <span>/ месяц</span></p>
+                    <a class="program-card-button" href="#signup">Подробнее</a>
+                  </article>
+
+                  <article class="program-card program-card-age program-card-private">
+                    <div class="program-card-head">
+                      <img
+                        class="program-card-visual"
+                        src="./assets/course-cards/acting-course.png"
+                        alt="Индивидуальный формат по актерскому мастерству"
+                      />
+                      <p class="program-card-segment">Индивидуально</p>
+                      <h3>Персональные занятия</h3>
+                    </div>
+                    <p class="program-card-line">По записи</p>
+                    <p class="program-card-line">Гибкий график</p>
+                    <p class="program-card-text">
+                      Персональная программа под запрос: сцена, речь, зажимы,
+                      самопрезентация.
+                    </p>
+                    <p class="program-card-price">от 90 BYN <span>/ занятие</span></p>
+                    <a class="program-card-button" href="#signup">Подробнее</a>
+                  </article>
+                </div>
+              </div>
+
+              <div class="program-panel" id="oratory-panel" data-tab-panel hidden>
+                <div class="oratory-offers">
+                  <article class="oratory-offer-card">
+                    <p class="oratory-offer-label">Группа</p>
+                    <h3>Ораторское мастерство</h3>
+                    <p class="oratory-offer-text">
+                      Для выступлений, переговоров, презентаций и уверенной
+                      речи в работе и жизни.
+                    </p>
+                    <div class="oratory-offer-meta">
+                      <p><strong>Формат:</strong> мини-группа до 12 человек</p>
+                      <p><strong>Занятия:</strong> 2 раза в неделю по 2 часа</p>
+                      <p><strong>Фокус:</strong> речь, дикция, структура, подача</p>
+                    </div>
+                    <a class="intensive-banner-button" href="#signup">
+                      Записаться
+                    </a>
+                  </article>
+
+                  <article class="oratory-offer-card oratory-offer-card-dark">
+                    <p class="oratory-offer-label">Индивидуально</p>
+                    <h3>Персональные занятия</h3>
+                    <p class="oratory-offer-text">
+                      Подготовка к выступлению, прокачка самопрезентации,
+                      голос, спокойствие и работа под вашу задачу.
+                    </p>
+                    <div class="oratory-offer-meta">
+                      <p><strong>График:</strong> по согласованию</p>
+                      <p><strong>Подходит:</strong> экспертам, руководителям, студентам</p>
+                      <p><strong>Формат:</strong> 1 на 1 с педагогом</p>
+                    </div>
+                    <a class="intensive-banner-button" href="#signup">
+                      Записаться
+                    </a>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="info-section" id="speech">
         <div class="section-shell">
           <div class="speech-editorial">
@@ -330,8 +416,8 @@
                 <h2 class="section-title">Ораторское мастерство</h2>
               </div>
               <p class="speech-editorial-lead">
-                Отдельный блок для взрослой аудитории, которая ищет практический
-                результат для жизни, бизнеса и уверенной публичной подачи.
+                Групповой и индивидуальный формат для тех, кто хочет звучать
+                увереннее, яснее и спокойнее в любой публичной ситуации.
               </p>
 
               <div class="speech-editorial-points">
@@ -340,6 +426,13 @@
                   <p>
                     Переговоры, продажи, презентации, самопрезентация и
                     лидерская подача.
+                  </p>
+                </article>
+                <article>
+                  <h3>Индивидуальные занятия</h3>
+                  <p>
+                    Персональный темп, работа с зажимами, подготовка к важному
+                    выступлению или собеседованию.
                   </p>
                 </article>
                 <article>
@@ -436,58 +529,6 @@
                   Смотреть всех преподавателей
                 </span>
               </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="info-section" id="performances">
-        <div class="section-shell">
-          <div class="performances-editorial">
-            <div class="section-head section-head-compact">
-              <p class="section-label">Практика</p>
-              <h2 class="section-title">Выступления и отчетные показы</h2>
-            </div>
-
-            <div class="performances-editorial-hero">
-              <div class="performances-editorial-copy">
-                <p class="performances-editorial-kicker">
-                  От первой внутренней смелости до настоящей сцены
-                </p>
-                <p class="performances-editorial-text">
-                  В течение сезона группы проходят путь от камерных показов к
-                  полноценным театральным выходам перед живым зрителем.
-                </p>
-              </div>
-              <figure class="performances-editorial-media">
-                <img
-                  src="./assets/editorial/performances-stage-v1.png"
-                  alt="Выход участников театральной студии на сцену перед показом"
-                />
-              </figure>
-            </div>
-
-            <div class="performances-editorial-grid">
-              <article class="performance-mode-card">
-                <h3>Камерные показы</h3>
-                <p>
-                  Небольшие форматы для первых выходов на публику и работы с
-                  волнением.
-                </p>
-              </article>
-              <article class="performance-mode-card">
-                <h3>Открытые уроки</h3>
-                <p>
-                  Промежуточный формат для родителей, друзей и будущих учеников.
-                </p>
-              </article>
-              <article class="performance-mode-card">
-                <h3>Отчетные спектакли</h3>
-                <p>
-                  Полноценная сценическая работа с образом, партнерством и
-                  живым зрителем.
-                </p>
-              </article>
             </div>
           </div>
         </div>
@@ -627,8 +668,9 @@
                 <label>
                   Направление
                   <select name="course">
-                    <option>Театральные курсы</option>
-                    <option>Ораторское искусство</option>
+                    <option>Актерское мастерство</option>
+                    <option>Ораторское мастерство</option>
+                    <option>Индивидуальные занятия</option>
                     <option>Пробное занятие</option>
                   </select>
                 </label>
@@ -651,32 +693,36 @@
         <div class="footer-ribbon">
           <section class="footer-cell footer-brand-cell" aria-label="О студии">
             <div class="footer-wordmark">
-              <span>Театр</span>
-              <span>студия</span>
+              <span>Школа</span>
+              <span>мастерства</span>
             </div>
             <p class="footer-brand-text">
-              Пространство для тех, кто хочет говорить, действовать и
-              вдохновлять.
+              Пространство для тех, кто хочет говорить, чувствовать, действовать
+              и быть свободнее в себе.
             </p>
           </section>
 
           <section class="footer-cell" aria-labelledby="footer-contacts-title">
             <h3 class="footer-label" id="footer-contacts-title">Контакты</h3>
             <div class="footer-contact-list">
-              <p>+375 (29) 000-00-00</p>
-              <p>
-                <a href="mailto:[укажите-email]">[укажите-email]</a>
-              </p>
-              <p>г. Минск, [укажите точный адрес студии]</p>
-              <p>Пн-Пт 11:00-20:00, Сб 11:00-16:00</p>
+              <p><a href="tel:+375291492803">+375 (29) 149-28-03</a></p>
+              <p>Email: уточняется</p>
+              <p>г. Гомель, ул. Интернациональная 10А, 9 этаж, пом. 906</p>
+              <p>Пн-Пт 17:00-21:30, Сб-Вс 10:00-18:00</p>
             </div>
           </section>
 
           <section class="footer-cell footer-map-cell" aria-labelledby="footer-map-title">
             <h3 class="footer-label" id="footer-map-title">Как нас найти</h3>
-            <div class="footer-map-preview" aria-hidden="true">
+            <a
+              class="footer-map-preview"
+              href="https://yandex.by/maps/?text=%D0%93%D0%BE%D0%BC%D0%B5%D0%BB%D1%8C%2C%20%D1%83%D0%BB.%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%2010%D0%90%2C%20%D0%BF%D0%BE%D0%BC.%20906"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Открыть адрес студии на карте"
+            >
               <span class="footer-map-pin"></span>
-            </div>
+            </a>
           </section>
 
           <section class="footer-cell" aria-labelledby="footer-docs-title">
@@ -695,14 +741,24 @@
           <section class="footer-cell footer-social-cell" aria-labelledby="footer-socials-title">
             <h3 class="footer-label" id="footer-socials-title">Мы в соцсетях</h3>
             <div class="footer-social-links">
-              <a href="#" aria-label="Telegram студии">Telegram</a>
-              <a href="#" aria-label="Instagram студии">Instagram</a>
-              <a href="#" aria-label="YouTube студии">YouTube</a>
-              <a href="#" aria-label="VK студии">VK</a>
+              <a
+                href="https://vk.com/club154474185"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="VK студии"
+                >VK</a
+              >
+              <a
+                href="https://www.instagram.com/kontekst_teatr_kursy_gomel/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram студии"
+                >Instagram</a
+              >
             </div>
             <p class="footer-copy">
-              Когда появятся публичные ссылки, их можно будет подставить сюда
-              без переделки макета.
+              Быстрый способ связаться со студией и посмотреть актуальные
+              анонсы, наборы и атмосферу занятий.
             </p>
           </section>
         </div>
