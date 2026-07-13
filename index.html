@@ -3,87 +3,150 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Театр-студия Конtекsт</title>
+    <title>Школа актерского и ораторского мастерства</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=26" />
+    <link rel="stylesheet" href="./styles.css?v=28" />
   </head>
   <body>
     <header class="site-header">
       <div class="header-shell">
         <div class="header-top-row">
-          <a class="brand" href="#top" aria-label="Театр-студия Конtекsт">
-            <img
-              class="brand-logo"
-              src="./assets/logo-kontekst-black.svg"
-              alt="Театр-студия Конtекsт"
-            />
-          </a>
+          <div class="header-top-main">
+            <a class="brand" href="#top" aria-label="Школа актерского и ораторского мастерства">
+              <span class="brand-top-line" aria-hidden="true"></span>
+              <img
+                class="brand-logo"
+                src="./assets/logo-kontekst-black.svg"
+                alt="Школа актерского и ораторского мастерства"
+              />
+              <span class="brand-bottom-line" aria-hidden="true"></span>
+            </a>
 
-          <div class="header-utility-row" aria-label="Контактная информация">
-            <a
-              class="header-utility-link header-utility-link-map"
-              href="https://yandex.by/maps/?text=%D0%93%D0%BE%D0%BC%D0%B5%D0%BB%D1%8C%2C%20%D1%83%D0%BB.%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%2010%D0%90%2C%20%D0%BF%D0%BE%D0%BC.%20906"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span class="header-utility-label">Карты</span>
-              <span>📍 Гомель, ул. Интернациональная 10А, 9 этаж, пом. 906</span>
-            </a>
-            <div class="header-utility-link header-utility-link-muted">
-              <span class="header-utility-label">Email</span>
-              <span>уточняется</span>
+            <div class="header-utility-row" aria-label="Контактная информация">
+              <div class="header-utility-items">
+                <a
+                  class="header-utility-link header-utility-link-map"
+                  href="https://yandex.by/maps/?text=%D0%93%D0%BE%D0%BC%D0%B5%D0%BB%D1%8C%2C%20%D1%83%D0%BB.%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%2010%D0%90%2C%20%D0%BF%D0%BE%D0%BC.%20906"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span class="header-utility-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path
+                        d="M12 22s7-6.4 7-12a7 7 0 1 0-14 0c0 5.6 7 12 7 12Zm0-9.1a2.9 2.9 0 1 1 0-5.8 2.9 2.9 0 0 1 0 5.8Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </span>
+                  <span class="header-utility-copy">
+                    <span class="header-utility-label">Адрес</span>
+                    <span>Гомель, ул. Интернациональная 10А, 9 этаж, пом. 906</span>
+                  </span>
+                </a>
+                <a
+                  class="header-utility-link header-utility-link-muted"
+                  href="mailto:Artnutak@gmail.com"
+                >
+                  <span class="header-utility-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path
+                        d="M3 6.5A2.5 2.5 0 0 1 5.5 4h13A2.5 2.5 0 0 1 21 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5Zm2 .5v.2l6.6 4.8a.7.7 0 0 0 .8 0L19 7.2V7a1 1 0 0 0-1-1h-12a1 1 0 0 0-1 1Zm14 2.1-5.7 4.1a2.7 2.7 0 0 1-3.2 0L5 9.1v8.4a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </span>
+                  <span class="header-utility-copy">
+                    <span class="header-utility-label">Email</span>
+                    <span>Artnutak@gmail.com</span>
+                  </span>
+                </a>
+                <a class="header-utility-link" href="tel:+375291492803">
+                  <span class="header-utility-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path
+                        d="M7 4.5c.4-.4 1-.6 1.6-.4l2.5.8c.7.2 1.1 1 .9 1.7l-.6 2.1a1.5 1.5 0 0 1-1.5 1.1H9c.9 2 2.5 3.8 4.5 4.8l.3-.9a1.5 1.5 0 0 1 1.8-.9l2.3.6c.8.2 1.3 1 1.1 1.8l-.6 2.3c-.2.6-.7 1.1-1.4 1.2-1.8.2-4.4-.4-7.5-3.5C6.4 14 5.8 11.4 6 9.6c.1-.6.5-1.2 1-1.5Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </span>
+                  <span class="header-utility-copy">
+                    <span class="header-utility-label">Телефон</span>
+                    <span>+375 (29) 149-28-03</span>
+                  </span>
+                </a>
+              </div>
+
+              <a class="cta-button header-cta-button" href="#signup">
+                <span>Записаться</span>
+                <span class="header-cta-arrow" aria-hidden="true">→</span>
+              </a>
             </div>
-            <a class="header-utility-link" href="tel:+375291492803">
-              <span class="header-utility-label">Телефон</span>
-              <span>+375 (29) 149-28-03</span>
-            </a>
-            <a class="cta-button header-cta-button" href="#signup">Записаться</a>
           </div>
+
+          <button
+            class="header-burger"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-header-panel"
+            aria-label="Открыть меню"
+          >
+            <span class="header-burger-lines" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
         </div>
 
-        <div class="header-nav-row">
+        <div class="header-nav-row" id="mobile-header-panel">
           <nav class="main-nav" aria-label="Основная навигация">
-            <a href="#about">О нас</a>
-            <a href="#schedule">Расписание</a>
-            <a href="#adults-courses">Курсы для взрослых</a>
-            <a href="#kids-courses">Курсы для детей</a>
-            <a href="#speech">Курс ораторского мастерства</a>
-            <a href="#reviews">Отзывы</a>
-            <a
-              class="main-nav-social"
-              href="https://vk.com/club154474185"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="VK"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M4.9 7.8c.1 5.6 2.9 8.9 7.8 8.9h.3v-3.1c1.8.2 3.1 1.5 3.7 3.1h2.6c-.8-2.9-2.8-4.5-4.1-5.1 1.3-.8 3-2.7 3.4-3.8h-2.4c-.5 1.1-2 2.9-3.2 3v-3h-2.4v5.3c-1.2-.3-2.8-2.1-2.9-5.3z"
-                  fill="currentColor"
-                />
-              </svg>
-            </a>
-            <a
-              class="main-nav-social"
-              href="https://www.instagram.com/kontekst_teatr_kursy_gomel/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Instagram"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M7.2 3h9.6A4.2 4.2 0 0 1 21 7.2v9.6a4.2 4.2 0 0 1-4.2 4.2H7.2A4.2 4.2 0 0 1 3 16.8V7.2A4.2 4.2 0 0 1 7.2 3m0 1.8A2.4 2.4 0 0 0 4.8 7.2v9.6a2.4 2.4 0 0 0 2.4 2.4h9.6a2.4 2.4 0 0 0 2.4-2.4V7.2a2.4 2.4 0 0 0-2.4-2.4zm10.1 1.3a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2M12 7.4A4.6 4.6 0 1 1 7.4 12 4.6 4.6 0 0 1 12 7.4m0 1.8A2.8 2.8 0 1 0 14.8 12 2.8 2.8 0 0 0 12 9.2"
-                  fill="currentColor"
-                />
-              </svg>
-            </a>
-            <a href="#contacts">Контакты</a>
+            <div class="main-nav-links" role="list">
+              <div class="main-nav-item"><a href="#about">О нас</a></div>
+              <div class="main-nav-item"><a href="#schedule">Расписание</a></div>
+              <div class="main-nav-item"><a href="#adults-courses">Курсы для взрослых</a></div>
+              <div class="main-nav-item"><a href="#kids-courses">Курсы для детей</a></div>
+              <div class="main-nav-item"><a href="#speech">Курс ораторского мастерства</a></div>
+              <div class="main-nav-item"><a href="#reviews">Отзывы</a></div>
+              <div class="main-nav-item"><a href="#contacts">Контакты</a></div>
+            </div>
+
+            <div class="main-nav-socials">
+              <a
+                class="main-nav-social"
+                href="https://vk.com/club154474185"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="VK"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4.9 7.8c.1 5.6 2.9 8.9 7.8 8.9h.3v-3.1c1.8.2 3.1 1.5 3.7 3.1h2.6c-.8-2.9-2.8-4.5-4.1-5.1 1.3-.8 3-2.7 3.4-3.8h-2.4c-.5 1.1-2 2.9-3.2 3v-3h-2.4v5.3c-1.2-.3-2.8-2.1-2.9-5.3z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a
+                class="main-nav-social"
+                href="https://www.instagram.com/kontekst_teatr_kursy_gomel/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M7.2 3h9.6A4.2 4.2 0 0 1 21 7.2v9.6a4.2 4.2 0 0 1-4.2 4.2H7.2A4.2 4.2 0 0 1 3 16.8V7.2A4.2 4.2 0 0 1 7.2 3m0 1.8A2.4 2.4 0 0 0 4.8 7.2v9.6a2.4 2.4 0 0 0 2.4 2.4h9.6a2.4 2.4 0 0 0 2.4-2.4V7.2a2.4 2.4 0 0 0-2.4-2.4zm10.1 1.3a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2M12 7.4A4.6 4.6 0 1 1 7.4 12 4.6 4.6 0 0 1 12 7.4m0 1.8A2.8 2.8 0 1 0 14.8 12 2.8 2.8 0 0 0 12 9.2"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </div>
           </nav>
+          <span class="nav-active-indicator" aria-hidden="true"></span>
         </div>
       </div>
     </header>
@@ -194,6 +257,7 @@
 
             <div class="skills-grid">
               <article class="skill-card">
+                <div class="skill-card-icon skill-card-icon-speech" aria-hidden="true"></div>
                 <h3>Говорить ясно</h3>
                 <p>
                   Развивать сценическую речь, дикцию, дыхание и уверенную
@@ -201,6 +265,7 @@
                 </p>
               </article>
               <article class="skill-card">
+                <div class="skill-card-icon skill-card-icon-freedom" aria-hidden="true"></div>
                 <h3>Быть свободнее</h3>
                 <p>
                   Чувствовать себя спокойно в общении, выступлениях и новых
@@ -208,6 +273,7 @@
                 </p>
               </article>
               <article class="skill-card">
+                <div class="skill-card-icon skill-card-icon-body" aria-hidden="true"></div>
                 <h3>Работать с телом</h3>
                 <p>
                   Осваивать пластику, внимание, выразительность и присутствие
@@ -215,6 +281,7 @@
                 </p>
               </article>
               <article class="skill-card">
+                <div class="skill-card-icon skill-card-icon-audience" aria-hidden="true"></div>
                 <h3>Держать аудиторию</h3>
                 <p>
                   Уверенно выступать, импровизировать и доносить свою мысль до
@@ -607,11 +674,11 @@
                     </p>
                   </details>
                   <details class="faq-item">
-                    <summary>Как проходят отчетные показы?</summary>
+                    <summary>Какой результат будет у ученика?</summary>
                     <p>
-                      В течение сезона группы готовят открытые показы, эскизы и
-                      финальные выступления в зависимости от возраста и
-                      программы.
+                      Результат зависит от возраста и цели: больше свободы в
+                      общении, уверенная речь, выразительность и готовность
+                      выходить к аудитории.
                     </p>
                   </details>
                   <details class="faq-item">
@@ -643,7 +710,7 @@
 
               <figure class="final-cta-media">
                 <img
-                  src="./assets/editorial/signup-portrait-v2.png"
+                  src="./assets/editorial/signup-portrait-v3.png"
                   alt="Педагог театральной студии с планшетом"
                 />
               </figure>
@@ -706,7 +773,7 @@
             <h3 class="footer-label" id="footer-contacts-title">Контакты</h3>
             <div class="footer-contact-list">
               <p><a href="tel:+375291492803">+375 (29) 149-28-03</a></p>
-              <p>Email: уточняется</p>
+              <p>Email: <a href="mailto:Artnutak@gmail.com">Artnutak@gmail.com</a></p>
               <p>г. Гомель, ул. Интернациональная 10А, 9 этаж, пом. 906</p>
               <p>Пн-Пт 17:00-21:30, Сб-Вс 10:00-18:00</p>
             </div>
@@ -766,6 +833,132 @@
     </footer>
     <script>
       (function () {
+        const header = document.querySelector(".site-header");
+        const burgerButton = document.querySelector(".header-burger");
+        const mobileBreakpoint = window.matchMedia("(max-width: 720px)");
+
+        const setMobileMenuState = (isOpen) => {
+          if (!header || !burgerButton) return;
+
+          header.classList.toggle("is-menu-open", isOpen);
+          burgerButton.setAttribute("aria-expanded", String(isOpen));
+          burgerButton.setAttribute(
+            "aria-label",
+            isOpen ? "Закрыть меню" : "Открыть меню",
+          );
+        };
+
+        if (header) {
+          const updateHeaderHeight = () => {
+            document.body.style.setProperty(
+              "--header-height",
+              `${header.offsetHeight}px`,
+            );
+          };
+
+          updateHeaderHeight();
+
+          if ("ResizeObserver" in window) {
+            new ResizeObserver(updateHeaderHeight).observe(header);
+          }
+
+          window.addEventListener("load", updateHeaderHeight);
+          window.setTimeout(updateHeaderHeight, 0);
+        }
+
+        if (burgerButton && header) {
+          burgerButton.addEventListener("click", () => {
+            const isOpen = !header.classList.contains("is-menu-open");
+            setMobileMenuState(isOpen);
+          });
+
+          document.querySelectorAll('.main-nav-links a[href^="#"]').forEach((link) => {
+            link.addEventListener("click", () => {
+              if (mobileBreakpoint.matches) {
+                setMobileMenuState(false);
+              }
+            });
+          });
+
+          const syncMobileMenu = () => {
+            if (!mobileBreakpoint.matches) {
+              setMobileMenuState(false);
+            }
+          };
+
+          if ("addEventListener" in mobileBreakpoint) {
+            mobileBreakpoint.addEventListener("change", syncMobileMenu);
+          } else if ("addListener" in mobileBreakpoint) {
+            mobileBreakpoint.addListener(syncMobileMenu);
+          }
+        }
+
+        const navRow = document.querySelector(".header-nav-row");
+        const navLinks = Array.from(
+          document.querySelectorAll('.main-nav-links a[href^="#"]'),
+        );
+
+        if (navRow && navLinks.length) {
+          const linkSections = navLinks.map((link) => {
+            const sectionId = link.getAttribute("href").slice(1);
+            return {
+              link,
+              section: document.getElementById(sectionId),
+            };
+          });
+
+          const positionIndicator = (link) => {
+            if (!link) return;
+
+            const linkRect = link.getBoundingClientRect();
+            const navRect = navRow.getBoundingClientRect();
+            const horizontalPadding = 10;
+
+            navRow.style.setProperty(
+              "--active-nav-x",
+              `${linkRect.left - navRect.left - horizontalPadding}px`,
+            );
+            navRow.style.setProperty(
+              "--active-nav-width",
+              `${linkRect.width + horizontalPadding * 2}px`,
+            );
+
+            navLinks.forEach((item) => {
+              const isActive = item === link;
+              item.classList.toggle("is-current", isActive);
+              if (isActive) {
+                item.setAttribute("aria-current", "page");
+              } else {
+                item.removeAttribute("aria-current");
+              }
+            });
+          };
+
+          const updateActiveLink = () => {
+            const headerHeight = header ? header.offsetHeight : 0;
+            const marker = window.scrollY + headerHeight + 72;
+            let currentLink = navLinks[0];
+
+            linkSections.forEach(({ link, section }) => {
+              if (section && section.offsetTop <= marker) {
+                currentLink = link;
+              }
+            });
+
+            positionIndicator(currentLink);
+          };
+
+          navLinks.forEach((link) => {
+            link.addEventListener("click", () => positionIndicator(link));
+          });
+
+          window.addEventListener("scroll", updateActiveLink, {
+            passive: true,
+          });
+          window.addEventListener("resize", updateActiveLink);
+          window.setTimeout(updateActiveLink, 0);
+        }
+
         const tabs = Array.from(document.querySelectorAll(".program-tab"));
         const panels = Array.from(document.querySelectorAll("[data-tab-panel]"));
 
